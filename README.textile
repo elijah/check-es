@@ -19,7 +19,7 @@ h3. For using the plugin from Shinken directly (I bet it's the same with Nagios)
 
 <pre>define command{
   command_name    check_es_docs
-  command_line    /usr/local/shinken/libexec/check_ping -w 5000000 -c 10000000 -a elasticserver:9200
+  command_line    /usr/local/shinken/libexec/check_es_docs -w 5000000 -c 10000000 -a elasticserver:9200
 }</pre>
 
 * edit the host configuration file for the host you want to monitor (eg: /etc/shinken/hosts/localhost.cfg), and add a service like this:
